@@ -19,7 +19,63 @@
         <p><input type="email" name="user-email" id="user-email" required /></p>
         <!-- 숫자 입력 서식 (tel) -->
         <p><input type="tel" name="user-phone" id="user-phone" required /></p>
-
+        <!-- 체크박스 서식 (checkbox) -->
+        <p>
+          <input
+            value="html"
+            checked
+            type="checkbox"
+            name="likelion-class"
+            id="html"
+            required
+          />
+          HTML
+          <input
+            value="css"
+            type="checkbox"
+            name="likelion-class"
+            id="css"
+            required
+          />
+          CSS
+          <input
+            value="js"
+            checked
+            type="checkbox"
+            name="likelion-class"
+            id="js"
+            required
+          />
+          Javascript
+          <input
+            value="react"
+            type="checkbox"
+            name="likelion-class"
+            id="react"
+            required
+          />
+          React
+        </p>
+        <!-- 라디오 서식 (radio) -->
+        <p>
+          <input
+            value="회고 1팀"
+            checked
+            type="radio"
+            name="techit-class"
+            id="class-1"
+            required
+          />
+          회고 1팀
+          <input
+            value="회고 2팀"
+            type="radio"
+            name="techit-class"
+            id="class-2"
+            required
+          />
+          회고 2팀
+        </p>
         <button type="submit">전송</button>
       </fieldset>
     </form>
