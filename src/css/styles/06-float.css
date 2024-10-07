@@ -1,12 +1,9 @@
 .container div {
-  /* width: 100px;
-  inline-size: 100px; */
   height: 100px;
   block-size: 100px;
   text-align: center;
   line-height: 100px;
 }
-
 .container {
   border: 10px solid currentColor;
   display: flow-root;
@@ -29,7 +26,7 @@ div.box3 {
   background-color: lightgreen;
   clear: both;
   /* margin-top: 20px;
-  margin-inline-start: 20px; */
+  margin-block-start: 20px; */
   width: 200px;
   inline-size: 200px;
   float: right;
