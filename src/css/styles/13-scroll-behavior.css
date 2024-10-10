@@ -1,6 +1,9 @@
 @import "./../../common/best-reset.css";
 .scroll-wrapper {
   scroll-snap-type: y mandatory;
+  height: 100vh;
+  block-size: 100vh;
+  overflow-y: auto;
 }
 section {
   width: 100%;
