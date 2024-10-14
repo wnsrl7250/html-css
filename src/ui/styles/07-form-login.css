@@ -103,14 +103,15 @@ body {
   --border-color: var(--silver, #dadada);
   --text-color: var(--dark-gray, #333);
   --text-size: var(--text-base, 0.875rem);
+
   font-size: var(--text-size);
 
   .input__input {
     border: 1px solid var(--border-color);
     inline-size: 100%;
-
     block-size: 3rem;
     padding: 0.875rem;
+
     &:user-invalid + .input__error-message span {
       visibility: visible;
     }
@@ -124,5 +125,37 @@ body {
     span {
       visibility: hidden;
     }
+  }
+}
+
+/* 스위치 컴포넌트 (checkbox) */
+.switch {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 700;
+
+  .switch__input {
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    margin: 0;
+    inline-size: 2em;
+    block-size: 1rem;
+    appearance: none;
+  }
+
+  .switch__label {
+    display: block;
+    inline-size: 2em;
+    text-align: end;
+
+    &::after {
+      content: "OFF";
+    }
+  }
+
+  .switch__input:checked + .switch__label::after {
+    content: "ON";
+    color: var(--green);
   }
 }
